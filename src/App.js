@@ -64,7 +64,7 @@ function SelectPercentage({ children, percentage, onSelect }) {
 
 function Output({ bill, tip, totalBill }) {
   return (
-    <h3>
+    <h3 style={bill > 0 ? {} : { display: "none" }}>
       You'll pay ${totalBill} (${bill} + ${tip} tip)
     </h3>
   );
